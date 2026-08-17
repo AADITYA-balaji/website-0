@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mabu's corner</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0d0f18;
+      color: #d1d5db;
+      font-family: 'Courier New', Courier, Consolas, Monaco, monospace;
+      padding: 30px 15px;
+      line-height: 1.6;
+    }
+
+    .main-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      border: 2px dashed #3b82f6;
+      background: #111827;
+      padding: 25px 20px;
+      text-align: center;
+      margin-bottom: 25px;
+      border-radius: 6px;
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #f3f4f6;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .sub {
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+
+    .box {
+      background: #111827;
+      border: 1px solid #1f2937;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: border-color 0.2s ease;
+    }
+
+    .box:hover {
+      border-color: #374151;
+    }
+
+    .box-title {
+      font-size: 1.1rem;
+      color: #60a5fa;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 6px;
+      position: relative;
+    }
+
+    .box-title::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 40px;
+      height: 1px;
+      background-color: #60a5fa;
+    }
+
+    ul.simple-list {
+      list-style-type: square;
+      padding-left: 20px;
+      font-size: 0.88rem;
+      color: #d1d5db;
+    }
+
+    ul.simple-list li {
+      margin-bottom: 8px;
+    }
+
+    ul.simple-list li strong {
+      color: #f3f4f6;
+    }
+
+    .sub-label {
+      font-size: 0.75rem;
+      color: #ef4444;
+      font-weight: normal;
+    }
+
+    details {
+      background: #1a2234;
+      border: 1px dashed #3b82f6;
+      border-radius: 6px;
+      padding: 12px;
+      transition: all 0.2s ease;
+    }
+
+    details:hover {
+      border-color: #ef4444;
+    }
+
+    details summary {
+      color: #60a5fa;
+      cursor: pointer;
+      font-size: 0.9rem;
+      outline: none;
+      user-select: none;
+    }
+
+    details summary:hover {
+      color: #ef4444;
+    }
+
+    details[open] summary {
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #1f2937;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-wrap">
+
+    <header>
+      <h1>mabu's page</h1>
+      <p class="sub">12th grade • robotics & AI enthusiast</p>
+    </header>
+
+    <div class="box" id="about">
+      <div class="box-title">> who am i</div>
+      <p style="font-size: 0.88rem; color: #d1d5db;">
+        Hey, I'm also called mabu. I'm currently in 12th grade and I love robotics and AI.
+      </p>
+    </div>
+
+    <div class="box" id="inspirations">
+      <div class="box-title">> my inspirations</div>
+      <ul class="simple-list">
+        <li><strong>Napoleon</strong></li>
+        <li><strong>Elon Musk</strong></li>
+        <li><strong>Tesla</strong></li>
+      </ul>
+    </div>
+
+    <div class="box" id="favorites">
+      <div class="box-title">> my favorites</div>
+      <ul class="simple-list">
+        <li><strong>Food:</strong> Pizza</li>
+        <li><strong>Drink:</strong> Iced Coffee</li>
+        <li><strong>Music Artist:</strong> Juice WRLD</li>
+        <li><strong>Games:</strong> Fortnite, Minecraft, Forza Horizon 5</li>
+      </ul>
+    </div>
+
+    <div class="box" id="anime">
+      <div class="box-title">> anime</div>
+      <details>
+        <summary>click to view my fav anime characters</summary>
+        <ul class="simple-list">
+          <li><strong>Gojo</strong></li>
+          <li><strong>Muzan Kibutsuji</strong> <span class="sub-label">(michael jackson)</span></li>
+          <li><strong>Luffy</strong></li>
+          <li><strong>Asta</strong></li>
+        </ul>
+      </details>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
