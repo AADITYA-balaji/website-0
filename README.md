@@ -1,4 +1,4 @@
-Hey there, I'm Mabu!
+Hey there
 
 I just made my second personal website 
 I hope u guys like it
